@@ -12,6 +12,11 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+const firaCode = localFont({
+  src: "./fonts/woff2/FiraCode-Medium.woff2",
+  variable: "--font-fira-code",
+  weight: "100 900"
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -26,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${firaCode.variable} ${firaCode.variable} antialiased`}
       >
         {children}
       </body>
